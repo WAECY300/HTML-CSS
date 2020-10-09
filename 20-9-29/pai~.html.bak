@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>拍拍网</title>
+  <style>
+
+						body{
+						        background-color:grey;
+					            margin:0;
+						        padding:0;
+						}
+						
+						.nav{
+							   border-bottom:8px solid red;
+							   border-radius:0 1px 1px 0;
+							   background-color:white;
+							   margin:0px auto;
+							   width:1300px;
+							   height:100px;
+							   line-height:80px;
+							}
+
+						.u2{
+								list-style-type:none;
+								overflow:hidden;
+								margin:0;
+						}
+
+						.u2 li{
+						         float:left;
+							     padding:8px;
+						}
+
+						.u2 li a{
+								text-decoration:none;
+								display:block;
+								color:black;
+						}
+
+						.d3{
+							 float:left;
+						}
+
+
+
+
+
+
+
+
+
+						.nav-menu{
+										background-color:cc2223;
+										height:px;
+										width:px;
+										float:left;
+						
+						}
+						.d3{
+								background-color:#cc2223;
+								margin:8px;
+								padding:0;
+						}
+						.u1{
+							list-style-type:none;
+							overflow:hidden;
+							padding:8px;
+							line-height:20px;
+						}
+						.u1 li a{
+						   text-decoration:none;
+						}
+						.ul2{
+								background-color:#e84848;
+						}
+						.ul3{
+						        background-color:#e84848;
+						}
+				
+  
+  </style>
+ </head>
+ <body>
+		<div class='nav'>	
+		
+			<div class='nav-menu'>
+				
+				<div class='d3'>
+					<div class='d0'>所有商品分类</div>
+					      <ul class='u1'>
+							<li class='ul2'><a href="">话费网费</a></li>
+							<li class='ul3'><a href="">男女服装</a>
+					     </ul>
+				</div>
+				    <ul class='u2'>
+						<li class='nz'><a href="#">女装</a></li>
+						<li><a href="#">男装</a></li>
+						<li><a href="#">数码</a></li>
+						<li><a href="#">运动</a></li>
+						<li><a href="#">美妆</a></li>	
+						<li><a href="#">家居</a></li>
+						<li><a href="#">美食</a></li>
+
+						<li><a href="#">充值</a></li>
+						<li><a href="#">彩票</a></li>
+						<li><a href="#">旅游</a></li>
+						<li><a href="#">票务</a></li>
+						<li><a href="#">今日特价</a></li>
+						<li><a href="#">团购</a></li>
+						<li><a href="#">特卖会</a></li>
+						<li><a href="#">更多</a></li>
+					</ul>
+			</div>
+		</div>
+ </body>
+</html>

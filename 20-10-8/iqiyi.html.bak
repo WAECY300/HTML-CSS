@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>爱奇艺</title>
+  <link rel="stylesheet" href="./iqiyi.css" style='text/css'/>
+ </head>
+ <body>
+				<div id='header_box'>
+							<div class='header'>
+							
+							</div>
+							<div class='banner_box'>
+							
+							</div>
+							<div id='nav'></div>
+				</div>
+ </body>
+</html>

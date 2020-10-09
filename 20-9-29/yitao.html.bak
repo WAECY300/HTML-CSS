@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+  <!-- 在非IE网站页面中，直接以块元素呈现，反之亦然
+		 
+
+		
+		-->
+  <title>一淘网</title>
+  <style>
+
+					*{
+					  margin:0;
+					  padding:0;
+					}
+
+					.nav{
+								width:1000px;
+ 								height:25px; 
+								line-height:23px;
+								margin:30px auto;
+								font-size:14px;
+								background-color:white;
+								border:1px solid transparent;
+								border-radius:0 10px 10px 0;
+					      }
+
+					.nav-menu{
+									list-style-type:none;
+									background-color:white;
+					}
+					.nav-menu li{
+									float:left;
+									border:1px dotted transparent;
+									text-align:center;
+									position:relative;
+										}
+					.nav-menu li:hover{
+									background-color:#555;
+					
+					}
+					.nav-menu li:active{
+									background-color:gold;
+					}
+					.nav-menu li a{
+									text-decoration:none;
+									color:black;
+									padding:0 23px;
+									display:block;
+					}
+					.nav-menu li a:active{
+									background-color:green;
+					}
+
+					.fx{
+					       float:left;
+						   background-color:#fc4442;
+					    }
+
+					.bj{
+						  background-color:#498fcd;
+					}
+
+					.yh{
+					      background-color:#72bd01;
+					}
+					.nav-menu .fx a{
+							display:block;
+							color:white;
+					}
+					.nav-menu .bj a{
+							color:white;
+							display:block;
+					}
+					.nav-menu .yh a{
+						    color:white;	
+					}
+					.H{
+						 position:absolute;
+						 top:-10px;
+					}
+					.nav-menu .fx .s1{
+							text-align:right;
+					}
+
+					.nav-menu .fx .s1{
+								
+					}
+
+
+
+					.footer{
+								background-color:#444;
+								color:white;
+								padding:15px;
+		
+  
+  </style>
+ </head>
+ <body>
+              <div class='nav'>
+											
+							<ul class='nav-menu'>
+										<li class='fx'>
+										<a href="">发现
+										<span class='s1'>
+										   <img src="./../images/square.png" alt="..." />
+										</span>
+										</a>
+										</li>
+										<li class='bj'>
+										<a href="">比较
+										<span class='s2'>
+										   <img src="../images/square.png" alt="..." />
+										</span>										
+										</a>
+										</li>
+										<li class='yh'>
+										<a href="">优惠</a>
+										</li>
+										<li>
+										<a href="">一淘专享
+										<span class='H'>
+												<img src="./../images/H.png" alt="HOT"/>
+										</span>
+										</a>
+										</li>
+										<li><a href="">促销活动</a></li>
+										<li><a href="">优惠券</a></li>
+										<li><a href="">积分</a></li>
+										<li><a href="">团购</a></li>
+										<li><a href="">返利</a></li>
+										<li><a href="">海淘</a></li>
+										<li><a href="">淘吧</a></li>					
+											
+							</ul>
+			  
+			  </div>
+			  <div class='footer'>
+			         <p>网页底部 </p>
+			  </div>
+   
+ </body>
+</html>

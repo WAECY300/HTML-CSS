@@ -1,0 +1,92 @@
+/* tao2.css*/
+
+/* 页面修饰 */
+body
+{
+background-color:blue;
+}
+#banner_box	
+{
+	height:600px;
+	background:black url('./banner-bg.png') no-repeat center;
+}
+#banner_box .banner_top
+{
+	height:59px;
+	boredr-bottom:1px solid rgba(255,255,255,.2);
+}
+#banner_box .banner-nav
+{
+	height:100%;
+}
+#banner_box .banner-nav .logo img
+{
+	width:114px;
+	margin-left:20px;
+	margin-top:15px;
+}
+#banner_box .banner-nav .nav li
+{
+	float:left;
+	margin-right:45px;
+	font-size:15px;
+	line-height:57px;
+	position:relative;
+}
+#banner_box .banner-nav .nav li>a
+{
+	display:block;
+	border-top:2px solid transparent;
+	border-top:2px solid white;
+
+}
+#banner_box .banner-nav .nav li:first-child
+{
+	padding:0 45px 0 50px;
+	margin-left:30px;
+	margin-right:0;
+}
+#banner_box .banner-nav .nav li div
+{
+	width:200px;
+	height:200px;
+	background-color:white;
+	position:absolute;
+	/* 让li内的div依照li的位置做定位，所以li应该是相对定位哦 */
+	left:0;
+	top:0;
+	border-radius:10px;
+	display:none;
+}
+#banner_box .banner-nav .nav li>i
+{
+	content:'';
+	display:block;
+	width:0;
+	line-height:0;
+	border-bottom-color:white;
+	border:10px solid transparent;
+	position:absolute;
+	top:39px;
+	left:50%;
+	margin-left:-10px;
+}
+#banner_box .banner_top .banner-nav .nav li:last-child:hover>a
+{
+	cursor:pointer;
+}
+#banner_box .banner-nav .nav li:last-child:hover>a::before
+{
+	display:none;
+}
+#banner_box .banner-nav .nav li:hover>a
+{  
+	border-top-color:white;
+}
+
+#banner_box .banner-nav .nav li.select_div:hover>div,
+#banner_box .banner-nav .nav li.select_div:hover>i,
+#banner_box .banner-nav .nav li.select_div:hover>a::before
+{
+	display:block;
+}

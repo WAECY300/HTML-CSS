@@ -1,0 +1,275 @@
+/*  iqiyi.css */
+
+*
+{
+	margin:0;
+	padding:0;
+}
+li
+{
+	list-style:none;
+}
+a
+{
+	color:#fff;
+	text-decoration:none;
+}
+i,em
+{
+	font-style:normal;
+}
+b,strong
+{
+	font-weight:normal;
+}
+.fl
+{
+	float:left;
+}
+.fr
+{
+	float:right;
+}
+/* 为了清除浮动对当前元素的父元素造成的影响 */
+.clear
+{
+	display:block;
+	height:0;
+	clear:both;
+}
+/* 去掉下列俩元素的外轮廓 */
+input,button
+{
+	outline:none;
+}
+
+.w1000
+{
+	width:1000px;
+	margin:0 auto;
+
+}
+body
+{
+	/*background:linear-gradient(to top,black 0,transparent 20%,transparent 80%,black 20%);*/
+	/*height:5000px;*/
+}
+/* 主体页面修饰 */
+html
+{
+	font-size: 10px;
+	/*为网页设置像素值*/
+}
+body
+{
+	background-color: #0a0a0a;
+	font-size: 1.2em;
+	/*相对于html设置的基础像素值为基础值，1em=10px */
+	color: #ffffff;
+}
+#header_box
+{
+
+}
+#banner_box
+{
+	position: relative;
+	/* 用来给swiper做定位*/
+}
+/*--------banner大图-------*/
+#banner_box ul
+{
+	position: relative;
+	height: 600px;
+	/*用来给li定位*/
+}
+#banner_box ul li
+{
+	position: absolute;
+	width: 100%;
+	display: none;
+	left:0;
+	top:0;
+}
+#banner_box ul li.show
+{
+	display: block;
+}
+#banner_box ul li img
+{
+	height: 500px;
+	width: 100%;
+}
+#banner_box ul li a
+{
+	display: block;
+	position: relative;
+	/*用来给 a的伪类定位*/
+}
+#banner_box ul li a:before
+{
+	/*
+		在伪类中是可以使用url插入图片的。
+	*/
+	content:'';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: white;
+	left: 0;
+	top: 0;
+	background-image: -webkit-linear-gradient(top,black 0,transparent 20%,transparent 80%,black 100%);
+}
+#banner_box ul li a:after
+{
+	/*为banner区域的大图，设置一个渐变的遮罩，上下为黑，中间透明。*/
+	content: url("./a.jpg");
+	display: block;
+	width:300px;
+	height:150px;
+	/* 找父元素a */
+	position: absolute;
+	left: 0;
+	bottom:20px;
+	background:url('./a.jpg') no-repeat ;
+	background-size: cover;
+	/*调整背景图片为盒子的大小*/
+	border: 2px solid white;
+}
+#banner_box ul li:nth-child(2) a:after
+{
+	background-image: url("b.jpg");
+}
+#banner_box ul li:nth-child(3) a:after
+{
+	background-image: url("c.jpg");
+}
+#banner_box ul li:nth-child(4) a:after
+{
+	background-image: url("d.jpg");
+}
+/*--------banner-轮播----------*/
+#banner_box div .swiper
+{
+	position: absolute;
+	top:15%;
+	width:218px;
+	padding:0 36px;
+	right:8%;
+	border: 2px solid red;
+
+}
+#banner_box div ol
+{
+	height:240px;
+	position: relative;
+}
+#banner_box div ol li
+{
+	width:80% ;
+	/*调整轮播图图片的位置前后叠加的顺序关系*/
+	position: absolute;
+	/*z-index: revert;*/
+}
+#banner_box div ol li:nth-child(1)
+{
+	z-index:100 ;
+	left:0;
+	-webkit-transform: scale3d(1,1,1);
+	opacity:1;
+}
+#banner_box div ol li:nth-child(2)
+{
+	z-index:99;
+	left: 10px;
+	-webkit-transform:scale(.6,.6);
+	filter:opacity(66);
+	/*scale(x,y) 宽高等比缩放
+	  opcality 透明度  0透明  1不透明
+		*/
+}
+#banner_box div ol li:nth-child(3)
+{
+	z-index:98 ;
+	left: 20px;
+	-webkit-transform:scale(.4,.4);
+	filter:opacity(44);
+}
+#banner_box div ol li:nth-child(4)
+{
+	z-index:97 ;
+	left: 30px;
+	-webkit-transform:scale(.2,.2);
+	filter:opacity(22);
+}
+#banner_box div ol li img
+{
+	width:100%;
+	height: 240px;
+}
+#banner_box div .swiper .swiper_box
+{
+	position: relative;
+}
+#banner_box div .swiper .swiper_box div
+{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 26px;
+	background-color: rgba(255,255,255,.5);
+	position: absolute;
+	top:50%;
+	cursor: pointer;
+	-webkit-transform: translate(-50%);
+
+}
+#banner_box div .swiper .swiper_box div .left
+{
+	left:-36px;
+}
+#banner_box div .swiper .swiper_box div .right
+{
+	right:-36px;
+}
+#banner_box div .swiper .swiper_box div:hover
+{
+	background-color: rgba(255,255,255,1);
+}
+#banner_box div .swiper img.vip-logo
+{
+	position: absolute;
+	left: 50%;
+	top: -60px;
+	/*通过位移来让图片左移50%的宽度。
+	定位后的图片正好和父元素的正中间对齐，所以需要调整图片的位置
+	*/
+	-webkit-transform: translate(-50%);
+}
+#header_box
+{
+	background-color: red;
+	height:30px;
+}
+
+
+
+.test1
+{
+	width: 500px;
+	margin: 50px auto;
+	text-align: center;
+	font-size: 10px;
+	font-weight:bold;
+}
+.test2
+{
+	-webkit-text-stroke: 2px blue;/*仅谷歌浏览器可见,文本描边2px 红色*/
+	color: transparent;
+	-webkit-text-fill-color: #1d1d1d;/*文本填充：蓝色*/
+	background: -webkit-linear-gradient(top,red,blue);
+	-webkit-background-clip:text;/* 背景裁切*/
+	text-shadow:1px 1px 2px black;
+}
