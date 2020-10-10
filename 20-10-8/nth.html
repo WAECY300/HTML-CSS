@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类元素</title>
+
+    <style>
+        /* 匹配所有p标签中第一个p元素*/
+        p:first-child{
+            color:red;
+        }
+        p li a{
+            display: inline;
+        }
+
+        p > li:first-child{
+            color: #72bd01;
+        }
+        p:last-child{
+            color:gold;
+            font-family: "Arial Rounded MT Bold";
+            font-size: 30px;
+            font-variant-emoji: emoji;
+        }
+        div{
+            width: 600px;
+            height: 600px;
+            background-color:#5ac4ff;
+        }
+        div ul {
+            border:2px double red;
+        }
+        div ul li{
+            text-decoration:none;
+            list-style:none;
+            color:#00ff00;
+        }
+    </style>
+</head>
+<body>
+        <div>
+        <p>啧啧啧啧啧啧
+            <ul>
+                <li>hahahahha
+                    <a>肄</a>
+                    <a>鳯</a>
+                    <a>懓</a>
+                    <a>驣</a>
+                    <a>钺</a>
+                    <a>杼</a>
+                    <a>窌</a>
+                </li>
+            <li>i5CUdsfh</li>
+            <li>i7CUdfhoisadiwai</li>
+            <li>i5CU6589cvs3984cdvg</li>
+            </ul>
+        </p>
+        <p>一叶知秋</p>
+        </div>
+</body>
+</html>
