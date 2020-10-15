@@ -6,104 +6,146 @@
 
     <style>
         /* 匹配所有p标签中第一个p元素*/
-        p:first-child{
-            color:red;
-        }
-        p li a{
-            display: inline;
-        }
+        /*p:first-child{*/
+            /*color:red;*/
+        /*}*/
+        /*p li a{*/
+            /*display: inline;*/
+        /*}*/
 
-        p > li:first-child{
-            color: #72bd01;
-        }
-        p:last-child{
-            color:gold;
-            font-family: "Arial Rounded MT Bold";
-            font-size: 30px;
-            font-variant-emoji: emoji;
-        }
-        div{
-            width: 600px;
-            height: 600px;
-            background-color:#5ac4ff;
-        }
-        div ul {
-            border:2px double red;
-            position: relative;
-        }
-        div ul li{
-            text-decoration:none;
-            list-style:none;
-            color:#00ff00;
-        }
-        .d1
+        /*p > li:first-child{*/
+            /*color: #72bd01;*/
+        /*}*/
+        /*p:last-child{*/
+            /*color:gold;*/
+            /*font-family: "Arial Rounded MT Bold";*/
+            /*font-size: 30px;*/
+            /*font-variant-emoji: emoji;*/
+        /*}*/
+        /*div{*/
+            /*width: 600px;*/
+            /*height: 600px;*/
+            /*background-color:#5ac4ff;*/
+        /*}*/
+        /*div ul {*/
+            /*border:2px double red;*/
+            /*position: relative;*/
+        /*}*/
+        /*div ul li{*/
+            /*text-decoration:none;*/
+            /*list-style:none;*/
+            /*color:#00ff00;*/
+        /*}*/
+        /*.d1*/
+        /*{*/
+            /*height: 200px;*/
+            /*width: 800px;*/
+            /*background-color:black;*/
+            /*border: 3px dashed red;*/
+            /*border-radius:3px 5px;*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*bottom: 0;*/
+        /*}*/
+        /*.d1 ul li*/
+        /*{*/
+            /*margin: 0 23px;*/
+            /*float: left;*/
+            /*tetx-align:center;*/
+        /*}*/
+
+        div
         {
-            height: 200px;
-            width: 800px;
+            width: 500px;
+            height:500px;
+        }
+        #nav
+        {
+            background-color: brown;
+        }
+        #nav_box
+        {
             background-color:black;
-            border: 3px dashed red;
-            border-radius:3px 5px;
+            border:3px solid gold;
+            float:left;
             position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top:300px;
+            right:300px;
         }
-        .d1 ul li
+        .head
         {
-            margin: 0 23px;
-            float: left;
-            tetx-align:center;
+            background-color:red;
+            border: 2px solid green;
+            float:right;
+            position: fixed;
+            right:50px;
+            top:500px;
+        }
+        .content
+        {
+            background-color:blue;
+            border: 3px solid #fcbe8d;
+            float:right;
+            position: relative;
         }
 
     </style>
 </head>
 <body>
-        <div>
-        <p>啧啧啧啧啧啧
-            <ul>
-                <li>hahahahha
-                    <a>肄</a>
-                    <a>鳯</a>
-                    <a>懓</a>
-                    <a>驣</a>
-                    <a>钺</a>
-                    <a>杼</a>
-                    <a>窌</a>
-                </li>
-            <li>i5CUdsfh</li>
-            <li>i7CUdfhoisadiwai</li>
-            <li>i5CU6589cvs3984cdvg</li>
-            </ul>
-        </p>
-        <p>一叶知秋</p>
-            <div class="d1">
-                <ul>
-                    <li>GGGGGGGG</li>
-                    <li>HHHHHHHHHH</li>
-                    <li>UUUUUUUU</li>
-                    <li>EWWERER</li>
-                    <li>LOYUMUJY</li>
-                </ul>
-            </div>
+        <!--<div>-->
+        <!--<p>啧啧啧啧啧啧-->
+            <!--<ul>-->
+                <!--<li>hahahahha-->
+                    <!--<a>肄</a>-->
+                    <!--<a>鳯</a>-->
+                    <!--<a>懓</a>-->
+                    <!--<a>驣</a>-->
+                    <!--<a>钺</a>-->
+                    <!--<a>杼</a>-->
+                    <!--<a>窌</a>-->
+                <!--</li>-->
+            <!--<li>i5CUdsfh</li>-->
+            <!--<li>i7CUdfhoisadiwai</li>-->
+            <!--<li>i5CU6589cvs3984cdvg</li>-->
+            <!--</ul>-->
+        <!--</p>-->
+        <!--<p>一叶知秋</p>-->
+            <!--<div class="d1">-->
+                <!--<ul>-->
+                    <!--<li>GGGGGGGG</li>-->
+                    <!--<li>HHHHHHHHHH</li>-->
+                    <!--<li>UUUUUUUU</li>-->
+                    <!--<li>EWWERER</li>-->
+                    <!--<li>LOYUMUJY</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div id="nav">
+        <div id="nav_box">
+
         </div>
 
-        <div id="nav_box">
                 <div class="head">
+
                         <div class="head_fl">
-
                         </div>
-                        <div class="head_fr">
 
+                        <div class="head_fr">
                         </div>
                 </div>
 
                 <div class="content">
-                    
-                        <div class="co_bottom">
 
+                        <div class="main">
+                        </div>
+
+                        <div class="co_bottom">
                         </div>
                 </div>
-
         </div>
+
+
 </body>
 </html>

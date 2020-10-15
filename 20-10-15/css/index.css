@@ -1,0 +1,59 @@
+
+/* 首页css文件 */
+
+#header
+{
+    height:104px;
+    background-color: green;
+}
+#nav
+{
+    height: 50px;
+    background-color:#2e2e2e;
+    color: #fff;
+    line-height: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+#nav li
+{
+    float: left;
+    width: 120px;
+}
+#nav li:hover
+{
+    transition: all 900ms;
+    -webkit-transform: translate(240px,-100px);
+    -webkit-transform:scale(1.5);
+    -webkit-transform: skew(720deg);
+}
+#nav li a
+{
+    display: block;
+    border-right:1px dotted #bbb;
+}
+#nav li:last-child a
+{
+    border: none;
+}
+/* 导航的悬浮事件*/
+#nav li.active a
+{
+    background-color: #00a56e;
+    background-clip:padding-box;
+}
+#banner
+{
+    height: 440px;
+    background-color: #0ed694;
+}
+#content
+{
+    height: 600px;
+    background-color: red;
+}
+#footer
+{
+    height: 130px;
+    background-color: blue;
+}

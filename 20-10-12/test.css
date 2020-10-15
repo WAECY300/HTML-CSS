@@ -1,0 +1,96 @@
+/*  test.css  */
+body
+{
+    background-color:grey;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    list-style-type:none;
+}
+a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+i,em
+{
+    font-style:normal;
+}
+b,strong
+{
+    font-weight:normal;
+}
+
+
+/*-------页面修饰-主体----------------------------*/
+#nav-box
+{
+    background-color: blue;
+    border: 2px dashed red;
+    width:1600px;
+    height:80px;
+}
+#nav-box .d1,.d2,.d3
+{
+    height:80px;
+}
+#nav-box .d1
+{
+    background:red;
+    width:800px;
+    float: left;
+}
+#nav-box .d2
+{
+    background: #0ed694;
+    width:400px;
+    float: left;
+}
+#nav-box .d3
+{
+    background:#00be06;
+    width:400px;
+    float: left;
+}
+#nav-box .d1 .u1 .item
+{
+    float: left;
+    margin: 0 33px;
+}
+#nav-box .d1 .u1 .item .nav-text
+{
+    line-height:26px;
+}
+
+
+#nav-box .d2 .u2
+{
+    height:80px;
+}
+#nav-box .d2 .u2 li
+{
+    width:170px;
+    float: left;
+    margin: 0;
+    padding-left: 30px;
+}
+#nav-box .d2 .u2 li a
+{
+    padding:3px 0;
+    line-height:27px;
+}
+
+#nav-box .d3
+{
+    margin-top:0px;
+    text-align: center;
+}
+#nav-box .d3 .u3 li a
+{
+    line-height:26px;
+}

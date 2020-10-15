@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡 位移 </title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        ul
+        {
+            width:600px;
+            height:350px;
+            margin:100px auto;
+        }
+        li
+        {
+            width:200px;
+            border:2px solid red;
+            float:left;
+            list-style:none;
+        }
+        li:hover
+        {
+            transition:all 3s 1s;
+            -webkit-transform:translate(20px,20px);
+            /*  位移 --（50px，100px）是从左边元素移动50个像素，并从顶部移动100像素  */
+            /*----------------------------------------------------------*/
+            transform:scale(1.2);
+            /* 1代表无变化 其后为调值
+                【缩放】
+              scale()方法，该元素增加或减少的大小，取决于宽度（X轴）和高度（Y轴）的参数：
+              scale（2,3）转变宽度为原来的大小的2倍，和其原始大小3倍的高度
+            */
+            /*----------------------------------------------------------*/
+            transform:skew(360deg);
+            /* 【倾斜】
+               包含两个参数值，分别表示X轴和Y轴倾斜的角度，如果第二个参数为空，则默认为0，参数为负表示向相反方向倾斜
+                skewX(<angle>);表示只在X轴(水平方向)倾斜。
+                skewY(<angle>);表示只在Y轴(垂直方向)倾斜。
+                skew(30deg,20deg) 元素在X轴和Y轴上倾斜20度30度。
+              */
+            /*----------------------------------------------------------*/
+            transform:rotate(90deg);
+            /*（30deg）元素顺时针旋转30度*/
+            /* 位移并倾斜 并旋转 并缩放*/
+            /*----------------------------------------------------------*/
+            transform:matrix();
+            /* 【利用matrix()方法旋转div元素xx°】
+                matrix()方法和2D变换方法合并成一个。
+                matrix 方法有六个参数，包含旋转，缩放，移动（平移）和倾斜功能
+            */
+            /*----------------------------------------------------------*/
+            transform:translate(100px,100px) skew(0) scale(1.5) rotate(300deg);
+            background-color:#777;
+            transform:scale(1,0.9);
+            /*
+                兼容模式
+                谷歌-----【-webkit-transform】
+                欧朋-----【-o-transform】
+                火狐-----【-moz-transform】
+                IE------【-ms-transform】
+                正常-----【transform】
+
+                translate(x，y)
+                scale(x,y)
+                skew(x,y)
+                rotate(+- 45 deg)
+                matrix() 6个值
+
+            */
+        }
+
+    </style>
+</head>
+<body>
+        <ul>
+            <li>一叶知秋</li>
+            <li>沐雨橙风</li>
+        </ul>
+
+</body>
+</html>
