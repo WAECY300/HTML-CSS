@@ -352,7 +352,7 @@ body
 	display:block;
 	width:110px;
 	height:32px;
-	background-color：#fff3ec;
+	background-color:#fff3ec;
 	color:#fd8968;
 	border:1px solid transparent;
 	border-radius:16px;
@@ -496,6 +496,5 @@ body
 
 #foot_box .w1140 .right-foot
 {
-	width:;
-	height:;
+
 }
